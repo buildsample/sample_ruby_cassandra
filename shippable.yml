@@ -6,7 +6,7 @@ rvm:
 services:
   - cassandra
   
-install:install cassandra
+install: install cassandra
 script:
   - cassandra-cli -host localhost -port 9160 -f schema.txt
   - ruby sample.rb
