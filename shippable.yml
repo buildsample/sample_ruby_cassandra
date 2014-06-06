@@ -3,6 +3,7 @@ language:
 
 services:
   - cassandra
+  
 install:
   - gem install cassandra
 script:
