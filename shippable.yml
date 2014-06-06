@@ -1,11 +1,12 @@
 language:
   - ruby
-
+rvm:
+  - 1.9.3
+  
 services:
   - cassandra
   
-install:
-  - gem install cassandra
+install:install cassandra
 script:
   - cassandra-cli -host localhost -port 9160 -f schema.txt
   - ruby sample.rb
