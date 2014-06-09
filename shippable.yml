@@ -9,9 +9,9 @@ install:
 
 
 rvm:
- - jruby-1.7.9
-
-
+ - jruby-1.7.12
+ 
+ 
 script:
   - cassandra-cli -host localhost -port 9160 -f schema.txt
   - ruby sample.rb
