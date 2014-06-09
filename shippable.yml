@@ -7,11 +7,6 @@ services:
 install:
   - gem install cassandra
 
-
-rvm:
- - jruby-18mode
- 
- 
 script:
   - cassandra-cli -host localhost -port 9160 -f schema.txt
   - ruby sample.rb
