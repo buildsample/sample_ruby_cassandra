@@ -10,7 +10,7 @@ services:
 
 before_install:
   #- source /home/shippable/.rvm/scripts/rvm
-  - source ~/.rvm/scripts/rvm && rvm use 2.2.0
+  - source ~/.rvm/scripts/rvm && rvm use 2.0.0
   
 install:
   - gem install cassandra
@@ -21,4 +21,4 @@ script:
   - cassandra-cli -host localhost -port 9160 -f removeKeyspace.txt
 archive: true
 #cache: true
-build_image: shippable/minv2:beta
+#build_image: shippable/minv2:beta
